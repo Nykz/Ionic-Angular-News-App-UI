@@ -1,0 +1,49 @@
+<swiper [effect]="'cards'" [grabCursor]="true" direction="vertical">
+  <ng-template swiperSlide *ngFor="let item of [1,2,3,4,5]">
+    <ion-content>
+      <ion-header translucent *ngIf="show">
+        <ion-toolbar>
+          <ion-title>News</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content [fullscreen]="true">
+        <img src="assets/imgs/news.jpg" />
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Madison, WI</ion-card-title>
+          </ion-card-header>
+          <ion-card-content (click)="hide()">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries
+          </ion-card-content>
+        </ion-card>
+        <p>
+          <ion-text class="ion-margin-start" color="medium">Short by Nikhil</ion-text>
+        </p>
+      </ion-content>
+    </ion-content>
+    <ion-toolbar class="tabs" *ngIf="show">
+      <ion-tabs>
+        <!-- Tab bar -->
+        <ion-tab-bar slot="bottom">
+          <ion-tab-button (click)="share()">
+            <ion-icon name="help-outline"></ion-icon>
+            <ion-label>Relevance</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button (click)="share()">
+            <ion-icon name="share-outline" color="primary"></ion-icon>
+            <ion-label>Share</ion-label>
+          </ion-tab-button>
+      
+          <ion-tab-button (click)="share()">
+            <ion-icon name="bookmark-outline" color="primary"></ion-icon>
+            <ion-label>Bookmark</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs>
+    </ion-toolbar>
+  </ng-template>
+</swiper>

@@ -1,0 +1,7 @@
+{
+  "name": "inshorts-clone-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

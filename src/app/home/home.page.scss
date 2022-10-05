@@ -1,0 +1,38 @@
+img {
+    width: 100%;
+    max-height: 40vh;
+}
+
+ion-card {
+    ion-card-header {
+        ion-card-title {
+            font-size: 1.2rem;
+        }
+    }
+    ion-card-content {
+        font-size: 1rem;
+    }
+}
+
+p {
+    margin-bottom: 20vh !important;
+    ion-text {
+      font-size: 0.8rem;
+    }
+}
+
+ion-toolbar.tabs {
+    position: absolute;
+    bottom: 0;
+}
+
+.ios {
+    ion-tabs {
+        display: block;
+        ion-tab-bar {
+            ion-tab-button {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
